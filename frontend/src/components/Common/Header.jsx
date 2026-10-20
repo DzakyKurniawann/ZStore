@@ -3,7 +3,9 @@ import TopBar from "../Layout/TopBar";
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+      <TopBar />
+    </div>
   );
 };
 
