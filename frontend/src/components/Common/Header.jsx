@@ -1,6 +1,6 @@
 import React from "react";
 import TopBar from "../Layout/TopBar";
-import Navbar from "../Layout/Navbar";
+import Navbar from "../Common/Navbar";
 
 const Header = () => {
   return (
