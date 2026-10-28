@@ -48,22 +48,10 @@ const similarProducts = [
     price: 100,
     images: [{ url: "https://picsum.photos/500/500?random=4" }],
   },
-  {
-    _id: 5,
-    name: "Product 5",
-    price: 100,
-    images: [{ url: "https://picsum.photos/500/500?random=5" }],
-  },
-  {
-    _id: 6,
-    name: "Product 6",
-    price: 100,
-    images: [{ url: "https://picsum.photos/500/500?random=6" }],
-  },
 ];
 
 const ProductDetails = () => {
-  const [mainImage, setMainImage] = useState("");
+  const [mainImage, setMainImage] = useState(null);
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
   const [quantity, setQuantity] = useState(1);
