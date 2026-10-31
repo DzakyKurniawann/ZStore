@@ -5,10 +5,19 @@ import login from "../assets/login.webp";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPawssword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("User register : ", { email, password });
+  };
+
   return (
     <div className="flex">
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-8 md:p-12">
-        <form className="w-full max-w-md bg-white p-8 rounded-lg border shadow-sm">
+        <form
+          onSubmit={handleSubmit}
+          className="w-full max-w-md bg-white p-8 rounded-lg border shadow-sm"
+        >
           <div className="flex justify-center mb-6">
             <h2 className="text-xl font-medium">Rabbit</h2>
           </div>
@@ -47,7 +56,7 @@ const Login = () => {
           </button>
 
           <p className="mt-6 text-center text-sm">
-            Don't have an account? { }
+            Don't have an account? {}
             <Link to="/register" className="text-blue-500">
               Register
             </Link>
